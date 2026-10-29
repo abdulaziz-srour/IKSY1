@@ -432,7 +432,7 @@ Für 3.6 und 3.7 baust du **nur das Formular** (HTML und CSS), es schickt an dei
 
 Die Eingabe entnehmen Sie dem folgenden Screenshot:
 
-![Formular Umzugsunternehmen](bilder/pk2_formular.png)
+![Formular Umzugsunternehmen](assets/pk2_formular.png)
 
 Stellen Sie client-seitig bereits sicher, dass für die Entfernung und die Arbeitszeit nur Zahlen größer 0, für die Entfernung nur Zahlen bis 500 und für die Arbeitszeit nur Zahlen bis 48 eingegeben werden und dass diese Felder verpflichtend sind. Für das Feld Teamgröße sind nur die Werte groß, mittel oder klein jeweils in klein geschrieben zulässig und es ebenfalls verpflichtend. Die Kundenauswahl überträgt die Kundennummer.
 
@@ -444,7 +444,7 @@ Datei: `aufgabe_3_6.html`
 
 Das Eingabeformular entnehmen Sie bitte folgendem Screenshot:
 
-![Formular Klemmbausteinefilter](bilder/pk6_formular.png)
+![Formular Klemmbausteinefilter](assets/pk6_formular.png)
 
 Stellen Sie client-seitig bereits sicher, dass für die Max. und Min. Anzahl Teile nur Zahlen größer gleich 1 und kleiner gleich 10.000 in 1er Schritten eingegeben werden können. Das Textfeld Altersgruppe ist ebenfalls verpflichtend. Die Kategorieauswahl überträgt die Kategorienummer.
 
