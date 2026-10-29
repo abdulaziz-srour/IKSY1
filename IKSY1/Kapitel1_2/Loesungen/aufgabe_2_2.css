@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+html {
+	font-family: sans-serif;
+}
+
+header,
+footer {
+	background-color: grey;
+}
+
+header h1,
+footer p {
+	text-align: center;
+}
+main {
+	position: relative;
+	padding-left: 16%;
+}
+
+nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 15%;
+	height: 100%;
+}

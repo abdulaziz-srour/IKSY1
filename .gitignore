@@ -1,0 +1,19 @@
+# Eclipse-Workspace und Projektdateien
+/.metadata/
+.settings/
+.buildpath
+.project
+.recommenders/
+RemoteSystemsTempFiles/
+
+# PHP-Bibliotheken und Smarty-Cache (kommen per composer install)
+vendor/
+templates_c/
+cache/
+
+# System- und Editor-Müll
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.log

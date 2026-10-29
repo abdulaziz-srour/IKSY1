@@ -1,0 +1,16 @@
+table {
+	border-collapse: collapse;
+	margin: 10px auto;
+}
+
+table caption {
+	padding: 2px;
+	font-size: 110%;
+	letter-spacing: 0.2em;
+	font-variant: small-caps;
+}
+
+td,th {
+	width: 10em;
+	border: 1px solid;
+}

@@ -1,0 +1,8 @@
+Window
+Preferences
+general
+appearance
+colors and fonts
+Basic
+Aa Text Font
+Edit
