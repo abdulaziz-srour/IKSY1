@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aufgabe 3.6</title>
+		<link rel="stylesheet" href="aufgabe_3_formular.css" type="text/css">
+	</head>
+	<body>
+		<h1>Aufgabe Umzugsunternehmen</h1>
+		<form method="post" action="auswertung.php">
+			<label for="i_kunde">Kunde</label>
+			<select name="kunde" id="i_kunde" required>
+				<option value="1">Meyer</option>
+				<option value="2" selected>Müller</option>
+				<option value="3">Schulze</option>
+				<option value="4">Bauer</option>
+			</select>
+			<br>
+			<label for="i_teamgroesse">Teamgröße</label>
+			<input type="text" name="teamgroesse" id="i_teamgroesse" pattern="groß|mittel|klein" required>
+			<br>
+			<label for="i_entfernung">Entfernung</label>
+			<input type="number" name="entfernung" id="i_entfernung" min="1" max="500" required>
+			<br>
+			<label for="i_arbeitszeit">Arbeitszeit</label>
+			<input type="number" name="arbeitszeit" id="i_arbeitszeit" min="1" max="48" required>
+			<br>
+			<label for="i_lastenaufzug">Lastenaufzug benötigt</label>
+			<input name="lastenaufzug" id="i_lastenaufzug" type="checkbox" value="ja" checked>
+			<br>
+			<label for="i_ausgabepdf">Ausgabe als PDF?</label>
+			<input name="ausgabepdf" id="i_ausgabepdf" type="checkbox" value="ja">
+			<br>
+			<button type="submit">Abschicken</button>	
+		</form>
+	</body>
+</html>

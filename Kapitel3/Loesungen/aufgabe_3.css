@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+html {
+	font-family: sans-serif;
+}
+
+header,
+footer {
+	background-color: grey;
+}
+
+header h1,
+footer p {
+	text-align: center;
+}
+main {
+	position: relative;
+	padding-left: 16%;
+}
+
+nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 15%;
+	height: 100%;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table caption {
+	padding: 2px;
+    font-size: 110%;
+    letter-spacing: 0.2em;
+    font-variant: small-caps;
+}
+
+td, th {
+	width: 10em;
+	border: 1px solid;
+}
+
+th {
+	background-color: lightgrey;
+}
+
+td {
+	text-align: center;
+}
+
+#profs {
+	display: flex;
+	gap: 20px;
+}
+
+.prof {
+	width: 300px;
+}
+
+.spalten {
+	display: flex;
+	gap: 20px;
+}
+
+.person,
+.studium {
+	flex: 1;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.buttons button {
+	font-size: 20px;
+	margin: 0 10px;
+	padding: 10px;
+	font-weight: bold;
+}

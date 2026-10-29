@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aufgabe 3.7</title>
+		<link rel="stylesheet" href="aufgabe_3_formular.css" type="text/css">
+	</head>
+	<body>
+		<h1>Klemmbausteinfilter</h1>
+		<form method="post" action="auswertung.php">
+			<label for="i_kategorie">Kategorie</label>
+			<select name="kategorie" id="i_kategorie" required>
+				<option value="1">Sculptures</option>
+				<option value="2">Technic</option>
+				<option value="3">City</option>
+			</select>
+			<br>
+			<label for="i_min_anzahl_teile">Min. Anzahl Teile</label>
+			<input type="number" name="min_anzahl_teile" id="i_min_anzahl_teile" min="1" max="10000" step="1" required>
+			<br>
+			<label for="i_max_anzahl_teile">Max. Anzahl Teile</label>
+			<input type="number" name="max_anzahl_teile" id="i_max_anzahl_teile" min="1" max="10000" step="1" required>
+			<br>
+			<label for="i_altersgruppe">Altersgruppe</label>
+			<input name="altersgruppe" id="i_altersgruppe" type="text" required>
+			<br>
+			<label for="i_ausgabepdf">Ausgabe als PDF?</label>
+			<input name="ausgabepdf" id="i_ausgabepdf" type="checkbox" value="ja">
+			<br>
+			<button type="submit">Abschicken</button>	
+		</form>
+	</body>
+</html>

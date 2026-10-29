@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Webseitengestaltung mit HTML und CSS</title>
+	<link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+<header class="banner"> HTML5 und CSS</header>
+<nav>
+	<h1>Navigationsbereich</h1>
+	<ul>
+		<li><a href="beispiel.html">Start</a></li>
+		<li><a href="tabellen.html">Tabellen</a></li>
+		<li><a href="formulare.html">Formulare</a></li>
+		<li><a href="medien.html">Multimedia</a></li>
+		<li><a href="http://www.hochschule-bochum.de" target="_blank">Hochschule Bochum</a></li>
+	</ul>
+</nav>
+<main>
+	<article>
+		<header>
+			<h1>Multimedia</h1>
+		</header>
+
+		<section>
+			<h2>Bilder</h2>
+			<h3>Bilder einbinden mit dem <code>&lt;img&gt;</code>-Element</h3>
+			<img src="HTML5_logo.png" alt="Logo von HTML5">
+
+			<h3>Bilder einbinden mit dem <code>&lt;picture&gt;</code>-Element</h3>
+			<picture>
+				<source media="(min-width: 1024px)" srcset="HTML5_logo-1600.png">
+				<source media="(min-width: 480px)" srcset="HTML5_logo-480.png">
+				<img src="HTML5_logo.png" alt="Logo von HTML">
+			</picture>
+		</section>
+
+		<section>
+			<h2>Audio einbinden</h2>
+
+			<audio controls>
+				<source src="Kalimba.mp3" type="audio/mp3">
+				<source src="horse.ogg" type="audio/ogg">
+				Ihr Browser kennt das HTML5-audio-Element noch nicht.
+			</audio>
+		</section>
+
+		<section>
+			<h2>Video einbinden</h2>
+
+			<video controls>
+				<source src="film.mp4" type="video/mp4">
+				<source src="film.ogv" type="video/ogg">
+				Ihr Browser kennt das HTML5-video-Element noch nicht.
+			</video>
+		</section>
+
+		<aside>
+			<h2>Quellenangaben</h2>
+			<ul>
+				<li><a href="http://wiki.selfhtml.org/wiki/HTML/Multimedia_und_Grafiken">Multimedia und Grafiken</a>
+				</li>
+			</ul>
+		</aside>
+	</article>
+</main>
+<footer>
+	<div id="impress">Impressum</div>
+	<div id="design">Design</div>
+</footer>
+</body>
+</html>

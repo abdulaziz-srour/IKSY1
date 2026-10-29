@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Webseitengestaltung mit HTML und CSS</title>
+	<link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+	<header class="banner"> HTML5 und CSS</header>
+	<nav>
+		<h1>Navigationsbereich</h1>
+		<ul>
+			<li><a href="beispiel.html">Start</a></li>
+			<li><a href="tabellen.html">Tabellen</a></li>
+			<li><a href="formulare.html">Formulare</a></li>
+			<li><a href="medien.html">Multimedia</a></li>
+			<li><a href="http://www.hochschule-bochum.de" target="_blank">Hochschule Bochum</a></li>
+		</ul>
+	</nav>
+	<main>
+		<article>
+			<header>
+				<h1>Formulare</h1>
+			</header>
+
+			<section>
+				<form method="post" action="auswertung.php">
+					<fieldset>
+						<legend>Persönliche Daten</legend>
+
+						<label for="i_name">Name</label>
+						<input type="text" name="name" id="i_name" min="2" max="20" pattern="Blümel|Bockermann|Brockmann|Klingspor|Schennonek"
+						title="erlaubt sind nur die Namen Blümel, Bockermann, Brockmann, Klingspor, Schennonek" autofocus required>
+						<br>
+
+						<label for="i_passwort">Passwort</label>
+						<input type="password" name="passwort" id="i_passwort">
+						<br>
+
+						<input type="radio" name="anrede" value="anrede_m" id="anrede_m">
+						<label class="button" for="anrede_m">Herr</label>
+						<input type="radio" name="anrede" value="anrede_f" id="anrede_f">
+						<label class="button" for="anrede_f">Frau</label>
+						<br>
+
+						<input type="checkbox" name="abschluss" value="abschluss_b" id="i_abschluss_b">
+						<label class="button" for="i_abschluss_b">Bachelor</label>
+						<input type="checkbox" name="abschluss" value="abschluss_m" id="i_abschluss_m">
+						<label class="button" for="i_abschluss_m">Master</label>
+						<br>
+					</fieldset>
+
+					<fieldset>
+						<legend>Weitere Informationen</legend>
+
+						<label for="i_zeit">Verstrichene Stunden</label>
+						<input type="number" name="zeit" id="i_zeit" step="7" min="0" max="1000">
+						<br>
+
+						<label for="i_date">Datum</label>
+						<input type="date" name="datum" id="i_date">
+						<br>
+
+						<label for="i_farbe">Farbe</label>
+						<input type="color" name="farbe" id="i_farbe">
+						<br>
+
+						<label for="i_bundesland">Bundesland</label>
+						<select name="bundesland" id="i_bundesland">
+							<option value="-">--</option>
+							<option value="Bayern">Bayern</option>
+							<option value="Baden-Wuerttemberg">Baden-Württemberg</option>
+							<option value="Sachsen">Sachsen</option>
+							<option value="Niedersachsen" selected>Niedersachsen</option>
+							<option value="Nordrhein-Westfalen">Nordrhein-Westfalen</option>
+						</select> <br>
+
+						<label for="i_land">Land</label>
+						<input type="text" name="land" list="liste_land" id="i_land">
+						<datalist id="liste_land">
+							<option value="Deutschland">
+							<option value="Holland">
+							<option value="Schweiz">
+							<option value="Spanien">
+							<option value="Österreich">
+						</datalist>
+						<br>
+					</fieldset>
+
+					<button type="submit">Eintragen</button>
+					<button type="reset">Zurücksetzen</button>
+				</form>
+			</section>
+
+			<aside>
+				<h2>Quellenangaben</h2>
+				<ul>
+					<li><a href="http://wiki.selfhtml.org/wiki/HTML/Formulare">Formulare</a></li>
+				</ul>
+			</aside>
+		</article>
+	</main>
+	<footer>
+		<div id="impress">Impressum</div>
+		<div id="design">Design</div>
+	</footer>
+</body>
+</html>
