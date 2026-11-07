@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- addition2.html -->
+	<title>Addition mit Eingabe </title>
+</head>
+<body>
+<script type='text/javascript'>
+	var ersterSummand;
+	var zweiterSummand;
+	var summe;
+	ersterSummand = prompt("Bitte geben Sie den ersten Summanden ein!", "");
+	zweiterSummand = prompt("Bitte geben Sie den zweiten Summanden ein!", "");
+	ersterSummand = parseFloat(ersterSummand);
+ 	zweiterSummand = parseFloat(zweiterSummand);
+	summe = ersterSummand + zweiterSummand;
+	document.write("Die Summe von " + ersterSummand +
+			" und " + zweiterSummand +
+			" ist: " + summe);
+</script>
+</body>
+</html>

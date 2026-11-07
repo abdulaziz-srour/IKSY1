@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="formular.css" type="text/css" >
+	<title>Aufgabe 4.6</title>
+</head>
+<body>
+	<form method="POST" action="aufgabe_4_6.php">
+		<label for="i_anzahl_seiten">Anzahl Seiten:</label>
+		<input id="i_anzahl_seiten" name="anzahlSeiten" type="number" min="1" max="500" required>
+		
+		<label for="i_anzahl_exemplare">Anzahl Exemplare:</label>
+		<input id="i_anzahl_exemplare" name="anzahlExemplare" type="number" min="1" max="100" required>
+		
+		<button type="submit">Berechnen</button>
+	</form>
+</body>
+</html>

@@ -458,7 +458,7 @@ Wenn du fertig bist (gern auch nach jeder Aufgabe einzeln), schreib mir „ferti
 
 ---
 
-## Spickzettel Formular (für die Klausur-Mappe)
+## Spickzettel Formular und Tabelle (für die Klausur-Mappe)
 
 ```html
 <form method="post" action="auswertung.php">
@@ -490,6 +490,50 @@ Wenn du fertig bist (gern auch nach jeder Aufgabe einzeln), schreib mir „ferti
 - `min`/`max` = Wert (Zahl, Datum); `minlength`/`maxlength` = Zeichenzahl (Text).
 - Zusammengehörige Checkboxen: `name="x[]"`.
 - HTML5-Prüfung ist umgehbar: **immer** zusätzlich in PHP prüfen.
+
+### HTML-Tabelle
+
+```html
+<table>
+  <caption>Kostenaufstellung</caption>      <!-- Überschrift, direkt nach <table> -->
+  <thead>
+    <tr>
+      <th>Posten</th>                       <!-- th = Kopfzelle (fett, zentriert) -->
+      <th>Menge</th>
+      <th>Betrag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Arbeitszeit</th>                  <!-- th auch als Zeilenkopf -->
+      <td>24 h</td>                         <!-- td = Datenzelle -->
+      <td>2040,00 €</td>
+    </tr>
+    <tr>
+      <th>Entfernung</th>
+      <td>13 km</td>
+      <td>4,42 €</td>
+    </tr>
+    <tr>
+      <th>Lastenaufzug</th>
+      <td colspan="2">75,00 €</td>         <!-- Zelle über 2 Spalten -->
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan="2">Summe</th>
+      <td>2119,42 €</td>
+    </tr>
+  </tfoot>
+</table>
+```
+
+- Aufbau **zeilenweise**: erst `tr`, darin die Zellen von links nach rechts. Jede Zeile braucht gleich viele Zellen.
+- `colspan="2"`: Zelle über 2 Spalten, in **dieser** Zeile eine Zelle weniger schreiben.
+- `rowspan="2"`: Zelle über 2 Zeilen, in der **nächsten** Zeile an dieser Stelle die Zelle weglassen.
+- `rowspan` reicht nicht von `tbody` in `tfoot` hinüber. `tfoot` ist nur für Summen.
+- Leere Ecke oben links: `<th></th>`.
+- Ohne CSS hat eine Tabelle **keine Linien** (CSS siehe unten).
 
 ### CSS für Formulare und Tabellen
 
