@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- kommentar.html -->
+	<title>Addition mit Eingabe </title>
+</head>
+<body>
+	<script type='text/javascript'>
+		/*  Autor: Bernd Bluemel
+		 Datum der letzten Aenderung: 17.09.14
+		 Zweck: Addition zweier Zahlen
+		 Dateiname: addition2.html
+		 */
+		var ersterSummand; //nimmt den ersten Summanden auf
+		var zweiterSummand; //nimmt den zweiten Summanden auf
+		// Einlesen der Sumanden
+		ersterSummand=prompt("Bitte geben Sie den ersten Summanden ein!", "");
+		zweiterSummand=prompt("Bitte geben Sie den zweiten Summanden ein!", "");
+		//Umwandeln der Summanden
+		ersterSummand=parseFloat(ersterSummand);
+		zweiterSummand=parseFloat(zweiterSummand);
+		//Addieren
+		summe=ersterSummand+zweiterSummand;
+		//Ausgeben
+		document.write("Die Summe von " + ersterSummand +
+				" und " + zweiterSummand +
+				" ist: " + summe);
+	</script>
+</body>
+</html>

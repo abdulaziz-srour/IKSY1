@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+form {
+	background-color: lightgrey;
+	padding: 10px;
+	width: 300px;
+}
+
+label {
+	display: inline-block;
+	width: 180px;
+}
+
+input,
+select {
+	box-sizing: border-box;
+	width: 100px;
+	margin: 3px 0;
+}
+
+button {
+	margin-left: 200px;
+}

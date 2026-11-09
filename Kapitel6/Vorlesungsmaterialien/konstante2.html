@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- konstante2.html -->
+	<title>Konstante</title>
+</head>
+<body>
+	<script type='text/javascript'>
+		var einkaufspreis;
+		var nettoVerkaufspreis;
+		var bruttoVerkaufspreis;
+		const MEHRWERTSTEUER=1.21;
+		const GEWINNSPANNE=1.19;
+		einkaufspreis=prompt("Bitte geben Sie den Einkaufspreis ein!", "");
+		nettoVerkaufspreis=GEWINNSPANNE*einkaufspreis;
+		bruttoVerkaufspreis=MEHRWERTSTEUER*nettoVerkaufspreis;
+		document.write("Netto-Verkaufspreis: "+nettoVerkaufspreis+"<br>"+
+				"Brutto-Verkaufspreis: "+bruttoVerkaufspreis);
+	</script>
+</body>
+</html>

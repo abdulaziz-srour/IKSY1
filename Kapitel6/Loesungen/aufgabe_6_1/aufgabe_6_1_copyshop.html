@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="formular.css" type="text/css" >
+	<!-- aufgabe_6_1_copyshop.html, Formular für die Berechnung -->
+	<title>Aufgabe 6.1 Copyshop</title>
+</head>
+<body>
+	<form method="POST" action="aufgabe_6_1_copyshop.php">
+		<label for="i_anzahl_seiten">Anzahl Seiten:</label>
+		<input id="i_anzahl_seiten" name="anzahlSeiten" type="number" min="1" max="500" required>
+		
+		<label for="i_anzahl_exemplare">Anzahl Exemplare:</label>
+		<input id="i_anzahl_exemplare" name="anzahlExemplare" type="number" min="1" max="100" required>
+		
+		<button type="submit">Berechnen</button>
+	</form>
+</body>
+</html>
