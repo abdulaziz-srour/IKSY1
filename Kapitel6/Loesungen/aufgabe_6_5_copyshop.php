@@ -42,7 +42,7 @@
 	<?php 
 	echo("<p>Preise: " . number_format(PREIS_PRO_SEITE, 2, ",", ".") . " € pro Seite, "
 	    . number_format(PREIS_BINDUNG_PRO_EXEMPLAR, 2, ",", ".") .  " € Bindung pro Exemplar, " 
-	    . number_format(MEHRWERTSTEUER_PROZENT, 2, ",", ".") . " % MwSt.");
+	    . number_format(MEHRWERTSTEUER_PROZENT, 2, ",", ".") . " % MwSt.</p>");
 	?>
 	<?php require_once("./includes/fusszeile.inc.php");?>
 </body>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="formular.css">
+<title>Darlehen mit Smarty</title>
+</head>
+<body>
+	<form method="POST" action="aufgabe_7_1.php">
+		<label for="i_immobilienpreis">Immobilienpreis:</label>
+		<input type="number" min="1" step="0.01" id="i_immobilienpreis" name="immobilienpreis" required>
+		
+		<label for="i_eigenkapital">Eigenkapital:</label>
+		<input type="number" min="0" step="0.01" id="i_eigenkapital" name="eigenkapital" required>
+		
+		<button type="submit">Berechnen</button>
+	</form>
+</body>
+</html>
