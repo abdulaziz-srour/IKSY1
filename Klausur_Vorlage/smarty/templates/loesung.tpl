@@ -7,11 +7,19 @@
 </head>
 <body>
 	<h2>{$ueberschrift}</h2>
-	
-	<form method="POST" action="loesung.php">
-		<label for="i_zahl">Zahl:</label>
-		<input id="i_zahl" type="number" name="zahl" min="0" max="{$maxGrenze}" required>
-		<button type="submit">Abschicken</button>
-	</form>
+	{if isset($PHP_SELF)}
+		<form method="POST" action="{$PHP_SELF}">
+			<label for="i_zahl">Zahl:</label>
+			<input id="i_zahl" type="number" name="zahl" min="{$minGrenze}" max="{$maxGrenze}" required>
+			<button type="submit">Abschicken</button>
+		</form>
+	{else}
+		{if isset($fehler)}
+			<p>Unzulässige Eingabe.</p>
+		{else}
+			<p>Ergebnis: {$ergebnis}</p>
+		{/if}
+		<a href="loesung.php">Neue Berechnung</a>
+	{/if}
 </body>
 </html>
