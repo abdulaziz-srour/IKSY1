@@ -3,6 +3,8 @@
     define("MAX_GRENZE", 100);
     
     require_once("./includes/startTemplate.inc.php");
+    require_once("./includes/pruefFunktionen.inc.php");
+    require_once("./includes/berechnungsFunktionen.inc.php");
     
     $PHP_SELF = $_SERVER['PHP_SELF'];
     $REQUEST_METHOD = $_SERVER['REQUEST_METHOD'];
@@ -16,14 +18,12 @@
         $smarty -> assign("maxGrenze", MAX_GRENZE);
     } else {
         $zahl = $_POST["zahl"];
-        
-        $eingabeKorrekt = is_numeric($zahl);
-        $eingabeKorrekt = $eingabeKorrekt && $zahl >= MIN_GRENZE && $zahl <= MAX_GRENZE;
+        $eingabeKorrekt = istZahlImBereich($zahl, MIN_GRENZE, MAX_GRENZE);
         
         if(!$eingabeKorrekt) {
             $smarty -> assign("fehler", true);
         } else {
-            $ergebnis = $zahl * 2;
+            $ergebnis = berechneErgebnis($zahl);
             $smarty -> assign("ergebnis", $ergebnis);
         }
     }
